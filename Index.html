@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Survey</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Netflix Survey</h1>
+        <p>Your feedback helps us improve your Netflix experience.</p>
+
+        <form id="survey-form">
+            <div class="form-group">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+             
+            <div class="form-group">
+                <label for="gendar">Gender</label>
+                <select name="option">
+                <select disabled 
+                    <option value="1">Male</option>
+                    <option value="2">Female</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="rating">How would you rate Netflix overall?</label>
+                <select id="rating" name="rating">
+                    <option value="1">1 - Very Poor</option>
+                    <option value="2">2 - Poor</option>
+                    <option value="3">3 - Average</option>
+                    <option value="4">4 - Good</option>
+                    <option value="5">5 - Excellent</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="genre">What is your favorite genre?</label>
+                <input type="text" id="genre" name="genre">
+            </div>
+
+            <div class="form-group">
+                <label for="recommend">Would you recommend Netflix to a friend?</label><br>
+                <input type="radio" id="yes" name="recommend" value="yes" required>
+                <label for="yes">Yes</label>
+                <input type="radio" id="no" name="recommend" value="no">
+                <label for="no">No</label>
+            </div>
+
+            <div class="form-group">
+                <label for="comments">Any additional comments or suggestions?</label>
+                <textarea id="comments" name="comments" rows="4" cols="50"></textarea>
+            </div>
+
+            <button type="submit">Submit Survey</button>
+        </form>
+    </div>
+
+</body>
+</html>
